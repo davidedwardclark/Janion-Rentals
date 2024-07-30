@@ -6,7 +6,6 @@
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
   font-size: 24px;
 }
 
@@ -37,6 +36,11 @@ h1 {
   font-size: 64px;
   text-align: center;
   font-weight: 400;
+  color: white;
+}
+
+h2 {
+  color: white;
 }
 
 a {
@@ -75,10 +79,14 @@ button {
 
 .gallery-img {
   width: 100%;
+  object-fit: cover;
+  height: min-content;
 }
 
 .gallery-img-half {
   display: flex;
+  height: min-content;
+  object-fit: cover;
 }
 
 /* Map */
@@ -87,11 +95,45 @@ button {
   width: 100%;
 }
 
-@media (min-width: 768px) {
-  body {
-    padding: 2rem 6rem;
-  }
+/* Testimonials */
+.testimonials {
+  padding: 10px;
+}
 
+.review {
+  padding: 10px 0;
+}
+
+.avatar {
+  display: flex;
+  padding-top: 10px;
+}
+
+/* Features */
+
+.features {
+  padding: 10px;
+}
+
+.footer-button {
+  background-color: green;
+  color: white;
+}
+
+/* Footer */
+
+footer {
+  padding: 10px;
+  background-color: black;
+  color: #fff;
+}
+
+.footer-text {
+  text-align: left;
+}
+/* Media Queries */
+
+@media (min-width: 768px) {
   header {
     flex-direction: row;
     justify-content: space-between;
