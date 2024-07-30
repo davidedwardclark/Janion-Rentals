@@ -115,12 +115,17 @@ button {
   padding: 10px;
 }
 
-.footer-button {
-  background-color: green;
-  color: white;
+.feature-list {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Footer */
+
+.footer-button {
+  background-color: #04c60c;
+  color: white;
+}
 
 footer {
   padding: 10px;
@@ -143,4 +148,20 @@ footer {
   main {
     height: 30%;
   }
+}
+
+/* Gallery */
+.image-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.map-img {
+  min-width: 200px;
+}
+
+/* Features */
+.features-list {
+  display: flex;
+  flex-direction: row;
 }
