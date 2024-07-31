@@ -71,7 +71,7 @@ button {
 .image-section {
   display: flex;
   flex-direction: column;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
 .gallery {
@@ -80,12 +80,16 @@ button {
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
+  padding-bottom: 15px;
 }
 
 .gallery-img {
-  width: 100px;
-  background-position: center;
+  width: 100%;
+  height: 200px;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: center center;
 }
 
 #img-1 {
@@ -95,7 +99,7 @@ button {
 
 #img-2 {
   grid-row: 1 / 2;
-  background-image: url("../../img/Janion-Store-St-Entrance-Stair.jpg");
+  background-image: url("../../img/Janion-Suite-new-4.jpg");
 }
 
 #img-3 {
@@ -114,12 +118,13 @@ button {
 }
 
 #img-6 {
-  background-image: url("../../img/Janion-Roof-Amenity.jpg");
-  width: 100%;
+  background-image: url("../../img/Janion-Suite-Heritage-1.jpg");
+  width: 120px;
 }
 
 #img-7 {
   background-image: url("../../img/Janion-Microsuite-Bathroom.jpg");
+  width: 120px;
 }
 
 .gallery-img-half {
@@ -127,6 +132,7 @@ button {
   height: min-content;
   object-fit: cover;
   grid-row: 3 / 4;
+  width: 100%;
 }
 
 /* Map */
@@ -160,6 +166,13 @@ button {
   flex-direction: column;
 }
 
+/* Button Section */
+.button-section {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
 /* Footer */
 
 .footer-button {
@@ -188,21 +201,66 @@ footer {
 
   main {
     height: 30%;
+    padding: 10%;
   }
 
   /* Gallery */
+
   .image-section {
     display: flex;
     flex-direction: row;
   }
 
+  .gallery {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding-bottom: 15px;
+  }
+
+  #img-1 {
+    grid-row: 1 / 1;
+    background-image: url("../../img/Janion-Roof-Amenity.jpg");
+  }
+
+  #img-2 {
+    grid-row: 1 / 2;
+    background-image: url("../../img/Janion-Suite-new-4.jpg");
+  }
+
+  #img-3 {
+    grid-row: 1 / 3;
+    background-image: url("../../img/Janion-Suite-Heritage-1.jpg");
+  }
+
+  #img-4 {
+    grid-row: 2 / 1;
+    background-image: url("../../img/Janion-Suite-Heritage-3.jpg");
+  }
+
+  #img-5 {
+    grid-row: 2 / 2;
+    background-image: url("../../img/Janion-Suite-new-4.jpg");
+  }
+
+  .gallery-img-half {
+    display: flex;
+    height: min-content;
+    object-fit: cover;
+    grid-row: 2 / 3;
+    width: 100%;
+  }
+
   .map-img {
     min-width: 200px;
+    max-width: 390px;
   }
 
   /* Features */
-  .features-list {
+  .feature-list {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
   }
 }
