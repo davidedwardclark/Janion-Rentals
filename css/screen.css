@@ -48,6 +48,10 @@ h2 {
   color: white;
 }
 
+h3 {
+  font-size: 32px;
+}
+
 a {
   color: #fff;
   text-decoration: none;
@@ -140,6 +144,7 @@ button {
   object-fit: cover;
   grid-row: 3 / 4;
   width: 100%;
+  justify-content: space-between;
 }
 
 /* Testimonials */
@@ -164,6 +169,8 @@ h4 {
 
 .testimonials-features {
   grid-row: 3 / 3;
+  padding: 0 16px;
+  padding-top: 40px;
 }
 
 /* Testimonials */
@@ -186,6 +193,7 @@ h4 {
 .feature-list {
   display: flex;
   flex-direction: column;
+  padding: 0 15px;
 }
 
 /* Button Section */
@@ -215,7 +223,7 @@ footer {
 }
 /* Media Queries */
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   header {
     flex-direction: row;
     justify-content: space-between;
@@ -242,6 +250,7 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 50px;
     padding-bottom: 15px;
+    padding-right: 50px;
   }
 
   #img-1 {
