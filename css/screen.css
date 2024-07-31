@@ -79,7 +79,7 @@ button {
 
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 30px;
   padding-bottom: 15px;
 }
 
@@ -94,7 +94,7 @@ button {
 
 #img-1 {
   grid-row: 1 / 1;
-  background-image: url("../../img/Janion-Roof-Amenity.jpg");
+  background-image: url("../../img/Janion-Suite-new-1.jpg");
 }
 
 #img-2 {
@@ -104,17 +104,17 @@ button {
 
 #img-3 {
   grid-row: 2 / 2;
-  background-image: url("../../img/Janion-Suite-Heritage-1.jpg");
+  background-image: url("../../img/Janion-Suite-Heritage-3.jpg");
 }
 
 #img-4 {
   grid-row: 2 / 2;
-  background-image: url("../../img/Janion-Suite-Heritage-3.jpg");
+  background-image: url("../../img/Janion-Roof-Amenity.jpg");
 }
 
 #img-5 {
   grid-row: 3 / 3;
-  background-image: url("../../img/Janion-Suite-new-4.jpg");
+  background-image: url("../../img/RelianceJanionBldg.jpg");
 }
 
 #img-6 {
@@ -133,6 +133,12 @@ button {
   object-fit: cover;
   grid-row: 3 / 4;
   width: 100%;
+}
+
+/* Testimonials */
+
+.avatar-img {
+  width: 50px;
 }
 
 /* Map */
@@ -178,6 +184,7 @@ button {
 .footer-button {
   background-color: #04c60c;
   color: white;
+  margin: 50px;
 }
 
 footer {
@@ -201,7 +208,7 @@ footer {
 
   main {
     height: 30%;
-    padding: 10%;
+    padding: 0 10%;
   }
 
   /* Gallery */
@@ -215,33 +222,28 @@ footer {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 50px;
     padding-bottom: 15px;
   }
 
   #img-1 {
     grid-row: 1 / 1;
-    background-image: url("../../img/Janion-Roof-Amenity.jpg");
   }
 
   #img-2 {
     grid-row: 1 / 2;
-    background-image: url("../../img/Janion-Suite-new-4.jpg");
   }
 
   #img-3 {
     grid-row: 1 / 3;
-    background-image: url("../../img/Janion-Suite-Heritage-1.jpg");
   }
 
   #img-4 {
     grid-row: 2 / 1;
-    background-image: url("../../img/Janion-Suite-Heritage-3.jpg");
   }
 
   #img-5 {
     grid-row: 2 / 2;
-    background-image: url("../../img/Janion-Suite-new-4.jpg");
   }
 
   .gallery-img-half {
