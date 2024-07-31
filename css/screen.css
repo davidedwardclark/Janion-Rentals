@@ -137,6 +137,11 @@ button {
 
 /* Testimonials */
 
+h4 {
+  align-content: center;
+  padding-left: 10px;
+}
+
 .avatar-img {
   width: 50px;
 }
@@ -264,5 +269,14 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+  }
+
+  /* Footer */
+
+  .footer-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 81px 10%;
   }
 }
