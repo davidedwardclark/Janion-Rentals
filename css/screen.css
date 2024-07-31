@@ -6,7 +6,6 @@
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 24px;
 }
 
 nav {
@@ -69,24 +68,65 @@ button {
 
 /* Gallery */
 
+.image-section {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
 .gallery {
   display: grid;
-  padding: 10px 0;
+
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
+  grid-gap: 10px;
 }
 
 .gallery-img {
+  width: 100px;
+  background-position: center;
+  background-size: cover;
+}
+
+#img-1 {
+  grid-row: 1 / 1;
+  background-image: url("../../img/Janion-Roof-Amenity.jpg");
+}
+
+#img-2 {
+  grid-row: 1 / 2;
+  background-image: url("../../img/Janion-Store-St-Entrance-Stair.jpg");
+}
+
+#img-3 {
+  grid-row: 2 / 2;
+  background-image: url("../../img/Janion-Suite-Heritage-1.jpg");
+}
+
+#img-4 {
+  grid-row: 2 / 2;
+  background-image: url("../../img/Janion-Suite-Heritage-3.jpg");
+}
+
+#img-5 {
+  grid-row: 3 / 3;
+  background-image: url("../../img/Janion-Suite-new-4.jpg");
+}
+
+#img-6 {
+  background-image: url("../../img/Janion-Roof-Amenity.jpg");
   width: 100%;
-  object-fit: cover;
-  height: min-content;
+}
+
+#img-7 {
+  background-image: url("../../img/Janion-Microsuite-Bathroom.jpg");
 }
 
 .gallery-img-half {
   display: flex;
   height: min-content;
   object-fit: cover;
+  grid-row: 3 / 4;
 }
 
 /* Map */
@@ -134,6 +174,7 @@ footer {
 }
 
 .footer-text {
+  padding-top: 5rem;
   text-align: left;
 }
 /* Media Queries */
@@ -148,20 +189,20 @@ footer {
   main {
     height: 30%;
   }
-}
 
-/* Gallery */
-.image-section {
-  display: flex;
-  flex-direction: row;
-}
+  /* Gallery */
+  .image-section {
+    display: flex;
+    flex-direction: row;
+  }
 
-.map-img {
-  min-width: 200px;
-}
+  .map-img {
+    min-width: 200px;
+  }
 
-/* Features */
-.features-list {
-  display: flex;
-  flex-direction: row;
+  /* Features */
+  .features-list {
+    display: flex;
+    flex-direction: row;
+  }
 }
