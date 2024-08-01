@@ -219,7 +219,7 @@ footer {
 }
 /* Media Queries */
 
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
   body {
     font-size: 24px;
   }
