@@ -82,21 +82,17 @@ button {
 .image-section {
   display: flex;
   flex-direction: column;
-  padding: 15px 0;
 }
 
 .gallery {
   display: grid;
-
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
-  padding-bottom: 15px;
 }
 
 .gallery-img {
   width: 100%;
-  height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
   background-origin: content-box;
@@ -256,16 +252,18 @@ footer {
   .image-section {
     display: flex;
     flex-direction: row;
+    height: 390px;
   }
 
   .gallery {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 50px;
-    padding-bottom: 15px;
+    /*! grid-gap: 50px; */
+    /*! padding-bottom: 15px; */
     padding-right: 50px;
-    width: 70%;
+    /*! width: 70%; */
+    /*! height: auto; */
   }
 
   #img-1 {
@@ -297,11 +295,11 @@ footer {
   }
 
   .map {
-    width: 30%;
+    height: 100%;
   }
 
   .map-img {
-    max-width: 100%;
+    height: 100%;
   }
 
   .reviews {
